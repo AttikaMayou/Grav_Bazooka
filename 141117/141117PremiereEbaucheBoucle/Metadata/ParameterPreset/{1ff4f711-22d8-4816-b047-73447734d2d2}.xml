@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{1ff4f711-22d8-4816-b047-73447734d2d2}">
+        <property name="name">
+            <value>NombreDeNoyaux</value>
+        </property>
+        <relationship name="folder">
+            <destination>{7d45c584-38a2-4c4d-8e71-cebfb1695259}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{30afc633-bc90-45fd-98ce-2339232c9a90}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{30afc633-bc90-45fd-98ce-2339232c9a90}">
+        <property name="maximum">
+            <value>10</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

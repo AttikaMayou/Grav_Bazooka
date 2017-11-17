@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ObjsAttract\normal\tabAttractV2.cs">
+    <Files>
+      <File FileName="Assets\BlackHall\GravePop.cs" Line="48" Column="48" />
+      <File FileName="Assets\ObjsAttract\normal\tabAttractV2.cs" Line="41" Column="18" />
+      <File FileName="Assets\BlackHall\AttractV2.cs" Line="11" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
