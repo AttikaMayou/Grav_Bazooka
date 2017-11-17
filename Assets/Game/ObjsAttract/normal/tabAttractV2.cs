@@ -52,12 +52,6 @@ public class tabAttractV2 : MonoBehaviour {
 			} else 
 				
 			if (go.GetComponent<AttractV2> ().attractionMode == AttractV2.AttractionMode.Rotation){
-//				Vector3 directionVelo = rb.velocity.normalized;
-//				if (directionVelo != Vector3.zero) {
-//					Vector3 normalPercut = ;
-//					float prodScal = Vector3.Dot (directionVelo, centrePosObj);
-//					Debug.Log (prodScal);
-//				}
 				float vitesseAttraction = go.GetComponent<AttractV2> ().vitesseAttraction;
 				float vitesseRotation = go.GetComponent<AttractV2> ().vitesseRotation;
 				Vector3 Centre = go.transform.position;
