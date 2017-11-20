@@ -13,8 +13,9 @@ public class GravePop : MonoBehaviour {
 	bool inDrag;
 	GameObject GoInDrag;
 
-
+	public int nbrBlMax;
 	void Update(){
+		
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		RaycastHit[] hits;
 		hits = Physics.RaycastAll (ray, 2000f);
@@ -27,6 +28,7 @@ public class GravePop : MonoBehaviour {
 			if (hits [i].collider.tag == "Fond") {
 				posCursorOnTable = hits [i].point;
 				if(Input.GetKeyDown(KeyCode.Mouse1)){
+					nbrBlMax--;
 					GameObject goPop = Instantiate (BouleGrav, hits [i].point, Quaternion.identity) as GameObject;
 					goPop.transform.GetChild (0).GetComponent<AttractV2> ().attractionMode = AttractV2.AttractionMode.Lineaire;
 					goPop.transform.GetChild (0).GetComponent<Renderer> ().material.color = new Color (0, 1, 0, 0.1f);
@@ -45,6 +47,7 @@ public class GravePop : MonoBehaviour {
 				}
 			}
 		}
+
 		if (Input.GetAxis ("Mouse ScrollWheel") < 0 && blFocus != null)
 			blFocus.transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
 		if (Input.GetAxis ("Mouse ScrollWheel") > 0 && blFocus != null)
@@ -60,8 +63,9 @@ public class GravePop : MonoBehaviour {
 
 			if (!blackHallTouche) {
 				for (int i = 0; i < hits.Length; i++) {
-					if (hits [i].collider.tag == "Fond") {
+					if (hits [i].collider.tag == "Fond" && nbrBlMax > 0) {
 						Instantiate (BouleGrav, hits [i].point, Quaternion.identity);
+						nbrBlMax--;
 					}
 				}
 			}

@@ -12,6 +12,9 @@ public class AttractV2 : MonoBehaviour {
 	public AttractionMode attractionMode;
 	public float vitesseRotation;
 	public float vitesseAttraction;
+	public bool reductionScale;
+	public float lapseTimeReduc;
+
 	void Start () {
 		transform.localScale *= portee;
 
@@ -19,8 +22,19 @@ public class AttractV2 : MonoBehaviour {
 		foreach (Collider col in Colliders) {
 			DetectionObjs (col);
 		}
+		if(reductionScale)
+			StartCoroutine ("ReductionScale");
 	}
 
+	IEnumerator ReductionScale(){
+		if (transform.localScale.x < 0.3f) {
+			StopCoroutine ("ReductionScale");
+			Depop ();
+		}
+		transform.localScale -= new Vector3 (0.1f, 0.1f, 0.1f);
+		yield return new WaitForSeconds (0.1f * lapseTimeReduc);
+		StartCoroutine ("ReductionScale");
+	}
 	void OnTriggerEnter(Collider col){
 		DetectionObjs (col);
 	}
@@ -50,6 +64,7 @@ public class AttractV2 : MonoBehaviour {
 					ListGoAppliquee[i].GetComponent<tabAttractV2> ().ListPts.RemoveAt (j);
 			}
 		}
+		GameObject.Find ("fond").GetComponent<GravePop> ().nbrBlMax++;
 		Destroy (gameObject.transform.parent.gameObject);
 	}
 

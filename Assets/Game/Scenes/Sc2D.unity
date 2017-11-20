@@ -86,7 +86,8 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 422ce64c295eec14dad16f8cee0f0460,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1017,6 +1018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BouleGrav: {fileID: 1991913645155522, guid: ede999b983ba14a49900476061905918, type: 2}
   Cube: {fileID: 1718083425775648, guid: 4212b7cb4b8269c49b6ca116668985fc, type: 2}
+  nbrBlMax: 10
 --- !u!65 &1250673150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1166,6 +1168,7 @@ GameObject:
   - component: {fileID: 1638094273}
   - component: {fileID: 1638094272}
   - component: {fileID: 1638094271}
+  - component: {fileID: 1638094276}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1244,6 +1247,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638094276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638094270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6c482f00e88e2479bc745d5e983e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1655759300
 Prefab:
   m_ObjectHideFlags: 0
