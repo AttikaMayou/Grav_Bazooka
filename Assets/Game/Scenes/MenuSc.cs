@@ -21,5 +21,11 @@ public class MenuSc : MonoBehaviour {
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.Escape))
 			SceneMenu ();
+		
+		if (Input.GetKeyDown (KeyCode.P)) {
+			if(Time.timeScale != 0)
+				Time.timeScale = 0;
+			else Time.timeScale = 1;
+		}
 	}
 }

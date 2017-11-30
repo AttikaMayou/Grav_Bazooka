@@ -9,11 +9,15 @@ public class GravePop : MonoBehaviour {
 	public GameObject BouleGrav;
 	public GameObject Cube;
 	float timeClic;
-	Vector3 posCursorOnTable;
+	public static Vector3 posCursorOnTable;
 	bool inDrag;
 	GameObject GoInDrag;
 
 	public int nbrBlMax;
+
+	float timeDragDrop;
+	bool timeDragDropSave;
+
 	void Update(){
 		
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -25,15 +29,8 @@ public class GravePop : MonoBehaviour {
 		GameObject blFocus = null;
 
 		for (int i = 0; i < hits.Length; i++) {
-			if (hits [i].collider.tag == "Fond") {
+			if (hits [i].collider.tag == "Fond")
 				posCursorOnTable = hits [i].point;
-				if(Input.GetKeyDown(KeyCode.Mouse1)){
-					nbrBlMax--;
-					GameObject goPop = Instantiate (BouleGrav, hits [i].point, Quaternion.identity) as GameObject;
-					goPop.transform.GetChild (0).GetComponent<AttractV2> ().attractionMode = AttractV2.AttractionMode.Lineaire;
-					goPop.transform.GetChild (0).GetComponent<Renderer> ().material.color = new Color (0, 1, 0, 0.1f);
-				}
-			}
 			
 			if (hits [i].collider.tag == "BlackHall") {
 				if (Input.GetAxis ("Mouse ScrollWheel") != 0) {
@@ -78,8 +75,18 @@ public class GravePop : MonoBehaviour {
 					}
 				}
 		}
-		if (inDrag)
+		if (inDrag) {
 			GoInDrag.transform.position = Vector3.Lerp (GoInDrag.transform.position, posCursorOnTable, 0.33f);
+			if (!timeDragDropSave) {
+				timeDragDrop = Time.time;
+				timeDragDropSave = true;
+			} else if (timeDragDropSave && timeDragDrop + 0.13f < Time.time) {
+				GoInDrag.transform.localScale -= new Vector3 (0.008f, 0.008f, 0.008f);
+				timeDragDrop = Time.time;
+			}
+		} else if (!inDrag)
+			timeDragDropSave = false;	
+
 
 		if (Input.GetKeyUp (KeyCode.Mouse0)) {
 			for (int i = 0; i < hits.Length; i++) {

@@ -116,7 +116,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 b00d2b3081303408793637d91edaf228 Assembly-CSharp.dll:.Morphing
 3e8ac271c3972f0f73208b3e25675ebe Assembly-CSharp-firstpass.dll:.FMOD_StudioEventEmitter
-ee5415dd79733f28b9daaae30620cc2e Assembly-CSharp.dll:.AttractV2
+a0d5e10ae54cadd69113b2afc36422ac Assembly-CSharp.dll:.AttractV2
 af5d8ebc29269ab0185395c1bde80d8c Assembly-CSharp.dll:.CamFps
 f5c3031670d4512c1a65d1cb73d2911b Assembly-CSharp-firstpass.dll:FMODUnity.StudioListener
 4beb1950b0f102b2eff82f55a62cb94d Assembly-CSharp.dll:.Smear
@@ -153,5 +153,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 23d0a7d7fc20287446a3f5afe639f6fc Assembly-CSharp.dll:.CollisionExplose
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpriteMaskController
 4b4cc5a055250c37c3d90973e6fb6759 Assembly-CSharp-firstpass.dll:FMODUnity.RuntimeManager
-8fe53538304d97f890d0a013214002d7 Assembly-CSharp.dll:.GravePop
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneModifier
+94dee57a5a04c4c119003bb0ef5404e4 Assembly-CSharp.dll:.GravePop
 9541343f9936f12f6a8a2f4d0bb837db Assembly-CSharp-firstpass.dll:FMODUnity.StudioBankLoader
+23f62220e81df39954745c397504fcd6 Assembly-CSharp.dll:.ExploseWall
+f596c70283346cd29c7fe29f916584d2 Assembly-CSharp.dll:.SlingShotControler

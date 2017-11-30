@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54488384482683126}
   - component: {fileID: 114076433891683002}
   - component: {fileID: 135733373432297120}
+  - component: {fileID: 114420528697519338}
   m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &114076433891683002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,7 +114,20 @@ MonoBehaviour:
   additionForce: 1
   ListForces: []
   ListPts: []
-  reducVitesse: 0
+  reducVitesse: 0.2
+  direction: 0
+--- !u!114 &114420528697519338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1661613829386590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ef0bee613f1164ead69c876bd0c74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseMinimum: 8
 --- !u!135 &135237455999756156
 SphereCollider:
   m_ObjectHideFlags: 1

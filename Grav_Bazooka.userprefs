@@ -2,9 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\BlackHall\AttractV2.cs">
     <Files>
-      <File FileName="Assets\Game\SceneModifier.cs" Line="16" Column="18" />
-      <File FileName="Assets\Game\BlackHall\GravePop.cs" Line="89" Column="40" />
-      <File FileName="Assets\Game\BlackHall\AttractV2.cs" Line="71" Column="35" />
+      <File FileName="Assets\Game\SceneModifier.cs" Line="7" Column="2" />
+      <File FileName="Assets\Game\BlackHall\AttractV2.cs" Line="30" Column="2" />
+      <File FileName="Assets\Game\ObjsAttract\Explosif\CollisionExplose.cs" Line="14" Column="4" />
+      <File FileName="Assets\Game\ObjsAttract\normal\ExploseWall.cs" Line="19" Column="3" />
+      <File FileName="Assets\Game\BlackHall\GravePop.cs" Line="39" Column="27" />
+      <File FileName="Assets\Game\ObjsAttract\normal\SlingShotControler.cs" Line="16" Column="2" />
+      <File FileName="Assets\Game\Scenes\MenuSc.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -9,6 +9,7 @@ TagManager:
   - BlackHall
   - BlackHallCible
   - MorphingPlane
+  - Mur
   layers:
   - Default
   - TransparentFX

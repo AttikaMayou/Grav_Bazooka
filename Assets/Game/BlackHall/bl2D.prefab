@@ -196,6 +196,7 @@ MonoBehaviour:
   vitesseAttraction: 3
   reductionScale: 1
   lapseTimeReduc: 0.5
+  timeFreez: 3
 --- !u!114 &114600583028283432
 MonoBehaviour:
   m_ObjectHideFlags: 1

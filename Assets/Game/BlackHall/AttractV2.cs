@@ -14,16 +14,23 @@ public class AttractV2 : MonoBehaviour {
 	public float vitesseAttraction;
 	public bool reductionScale;
 	public float lapseTimeReduc;
+	public float timeFreez;
+	float timeInstance;
 
 	void Start () {
+		
 		transform.localScale *= portee;
-
 		Collider[] Colliders = Physics.OverlapSphere (transform.position, portee/2f, 1 << 8);
 		foreach (Collider col in Colliders) {
 			DetectionObjs (col);
 		}
-		if(reductionScale)
-			StartCoroutine ("ReductionScale");
+		timeInstance = Time.time;
+		StartCoroutine ("Freezing");
+	}
+
+	IEnumerator Freezing(){
+		yield return new WaitForSeconds (timeFreez);
+		StartCoroutine ("ReductionScale");
 	}
 
 	IEnumerator ReductionScale(){
@@ -31,10 +38,11 @@ public class AttractV2 : MonoBehaviour {
 			StopCoroutine ("ReductionScale");
 			Depop ();
 		}
-		transform.localScale -= new Vector3 (0.1f, 0.1f, 0.1f);
+		transform.localScale -= new Vector3 (0.05f, 0.05f, 0.05f);
 		yield return new WaitForSeconds (0.1f * lapseTimeReduc);
 		StartCoroutine ("ReductionScale");
 	}
+
 	void OnTriggerEnter(Collider col){
 		DetectionObjs (col);
 	}

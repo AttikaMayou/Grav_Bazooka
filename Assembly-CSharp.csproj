@@ -63,7 +63,9 @@
      <Compile Include="Assets\Game\BlackHall\AttractV2.cs" />
      <Compile Include="Assets\Game\BlackHall\GravePop.cs" />
      <Compile Include="Assets\Game\ObjsAttract\Explosif\CollisionExplose.cs" />
-     <Compile Include="Assets\Game\ObjsAttract\normal\tabAttractV2.cs" />
+     <Compile Include="Assets\Game\ObjsAttract\Explosif\tabAttractV2.cs" />
+     <Compile Include="Assets\Game\ObjsAttract\normal\ExploseWall.cs" />
+     <Compile Include="Assets\Game\ObjsAttract\normal\SlingShotControler.cs" />
      <Compile Include="Assets\Game\SceneModifier.cs" />
      <Compile Include="Assets\Game\Scenes\fps\CamFps.cs" />
      <Compile Include="Assets\Game\Scenes\MenuSc.cs" />
