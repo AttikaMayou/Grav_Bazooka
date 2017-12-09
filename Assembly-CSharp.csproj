@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DA8C4A77-AA3F-0A5A-FF5B-93E416D9D39A}</ProjectGuid>
+    <ProjectGuid>{64A2D753-53C5-3198-5BAD-50B82ACE6FEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,7 @@
      <Compile Include="Assets\Game\ObjsAttract\Explosif\tabAttractV2.cs" />
      <Compile Include="Assets\Game\ObjsAttract\normal\ExploseWall.cs" />
      <Compile Include="Assets\Game\ObjsAttract\normal\SlingShotControler.cs" />
+     <Compile Include="Assets\Game\popObjs.cs" />
      <Compile Include="Assets\Game\SceneModifier.cs" />
      <Compile Include="Assets\Game\Scenes\fps\CamFps.cs" />
      <Compile Include="Assets\Game\Scenes\MenuSc.cs" />
@@ -301,7 +302,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5ED3F6C6-02E8-0F97-E3F1-B1EEB0683329}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{9A6107E1-B4BA-C1D0-7EBF-ED10EEA1BB8E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

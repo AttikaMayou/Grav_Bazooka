@@ -25,7 +25,8 @@ public class AttractV2 : MonoBehaviour {
 			DetectionObjs (col);
 		}
 		timeInstance = Time.time;
-		StartCoroutine ("Freezing");
+		if(reductionScale)
+			StartCoroutine ("Freezing");
 	}
 
 	IEnumerator Freezing(){

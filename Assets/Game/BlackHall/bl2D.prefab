@@ -188,13 +188,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a418dc2788a3b9e47b5e77a06d444bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portee: 10
-  forceBase: 2
+  portee: 15
+  forceBase: 0.09
   ListGoAppliquee: []
-  attractionMode: 0
+  attractionMode: 1
   vitesseRotation: 2
   vitesseAttraction: 3
-  reductionScale: 1
+  reductionScale: 0
   lapseTimeReduc: 0.5
   timeFreez: 3
 --- !u!114 &114600583028283432
